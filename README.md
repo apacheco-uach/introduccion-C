@@ -48,4 +48,20 @@ Para poder configurar correctamente Visual Studio Code para trabajar con C/C++ p
 
 En el directorio raíz de este repositorio puedes encontrar una serie de carpetas numeradas, cada una de ellas incluye su propio archivo Readme.md en el cual se describen los detalles de cada programa.
 
+Para editar, compilar y ejecutar los ejercicios de C/C++ desde Visual Studio Code, deberas clonar el repositorio y abrir la carpeta clonada. Este repostorio contiene los archivos de configuración launch.json y tasks.json, los cuales están configurados para la estructura sugerida de cada proyecto.
+
+#### Estructura de proyecto
+
+Cada proyecto en este repositorio cuenta con la siguiente estructura de carpetas
+
+<pre><code>
+00-nombre de proyecto - Carpeta que contiene el proyecto
+bin - Capeta de ejecutables
+main.c - Archivos
+</pre></code>
+
+Debido a esto, las variables de ejecución y compilación contienen el siguiente valor
+
+`"${fileDirname}/bin/${fileBasenameNoExtension}"`
+
 Por: [Hugo Vargas](https://github.com/hugoescalpelo)
